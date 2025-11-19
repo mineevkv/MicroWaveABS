@@ -6,9 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
 
-  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="dist/css/index.css" />
   <title>Microwave Landing</title>
 </head>
 
@@ -16,26 +17,32 @@
   <header class="header" aria-label="header">
     <div class="container">
       <nav class="header__nav nav" aria-label="header navigation">
-        <div class="nav__tittle">
-          <a href="#" class="nav__title-link">MICROWAVE ABS</a>
+        <div class="nav__title">
+          <a href="#" class="nav__title-link">
+            <svg class="nav__title-icon" aria-label="logo img">
+              <use href="assets/logo.svg#logo-icon"></use>
+            </svg>
+            MICROWAVE <span>ABS</span>
+          </a>
         </div>
+
 
         <div class="nav__links">
           <ul class="nav__links-list list" aria-label="header nav links">
             <li class="list__item" aria-label="first link">
-              <a href="#" class="list__item-link">о нас</a>
+              <a href="#" class="list__item-link">О нас</a>
             </li>
             <li class="list__item" aria-label="second link">
-              <a href="#" class="list__item-link">продукция</a>
+              <a href="#" class="list__item-link">Исследования</a>
             </li>
             <li class="list__item" aria-label="third link">
-              <a href="#" class="list__item-link">исследования</a>
+              <a href="#" class="list__item-link">Продукция</a>
             </li>
-            <li class="list__item" aria-label="third link">
-              <a href="#" class="list__item-link">партнеры</a>
+            <li class="list__item" aria-label="fourth link">
+              <a href="#" class="list__item-link">Сотрудничество</a>
             </li>
-            <li class="list__item" aria-label="third link">
-              <a href="#" class="list__item-link">контакты</a>
+            <li class="list__item" aria-label="fifth link">
+              <a href="#" class="list__item-link">Партнеры</a>
             </li>
           </ul>
         </div>
@@ -45,13 +52,12 @@
             <li class="lang__ru" aria-label="russian version">
               <a href="#" class="list__ru-link">RU</a>
             </li>
+            /
             <li class="lang__en" aria-label="english version">
               <a href="#" class="lang__en-link">EN</a>
             </li>
           </ul>
         </div>
-
-
 
       </nav>
     </div>
