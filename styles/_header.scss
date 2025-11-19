@@ -1,0 +1,9 @@
+@use 'variables' as v;
+@use 'mixins' as m;
+@use 'placeholders';
+@use 'sass:color';
+
+.header {
+    width: min(100%, 1920px);
+    height: 50px;
+}
