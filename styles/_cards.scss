@@ -1,0 +1,19 @@
+@use 'variables' as v;
+@use 'mixins' as m;
+@use 'placeholders';
+
+.info-card {
+     width: 180px;
+     height: 205px;
+    // // padding: 20px 10px 0;
+    // border-radius: 20px;
+    // //background-color: color.adjust(v.$color_white, $alpha: -0.85);
+    @include m.d-flex(start, center, nowrap, column, 0, 10px);
+
+    &__icon {
+        width: 100px;
+        height: 100px;
+        fill: v.$color_blue;
+        stroke: v.$color_blue;
+    }
+}

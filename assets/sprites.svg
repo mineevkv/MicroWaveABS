@@ -1,0 +1,38 @@
+            <!-- Mountain Range -->
+<svg display="none" xmlns="http://www.w3.org/2000/svg"> 
+    <symbol id="absorber-icon" viewBox="0 0 100 100">
+        
+                <!-- Small Left Pyramid -->
+                <polygon points="25,45 35,65 15,65"  opacity="1"/>
+                <!-- Medium Center Pyramid -->
+                <polygon points="45,35 55,65 35,65"  opacity="0.6"/>
+                <!-- Large Right Pyramid -->
+                <polygon points="65,25 75,65 55,65"  opacity="0.8"/>
+                <!-- Grade indicators -->
+     
+    </symbol>
+
+    <symbol id="load-icon" viewBox="0 0 100 100">
+        <polygon points="50,20 80,60 20,60"  opacity="0.7"/>
+        <path d="M 30,40 Q 50,30 70,40"  stroke-width="2" fill="none" opacity="0.8"/>
+        <path d="M 25,45 Q 50,35 75,45"  stroke-width="2" fill="none" opacity="0.6"/>
+        <path d="M 20,50 Q 50,40 80,50"  stroke-width="2" fill="none" opacity="0.4"/>
+    </symbol>
+
+    <symbol id="lens-icon" viewBox="0 0 100 100">
+        <circle cx="50" cy="50" r="30"  opacity="0.2"  stroke-width="2"/>
+        <circle cx="50" cy="50" r="25"  opacity="0.3"  stroke-width="1"/>
+        <circle cx="50" cy="50" r="18"  opacity="0.4"/>
+        <circle cx="50" cy="50" r="12"  opacity="0.5"/>
+        <circle cx="50" cy="50" r="8"  opacity="0.6"/>
+        <circle cx="50" cy="50" r="4"  opacity="1"/>
+        
+    </symbol>
+
+    <symbol id="resonator-icon" viewBox="0 0 100 100">
+        <path d="M 30,30 Q 50,40 70,30 Q 80,50 70,70 Q 50,60 30,70 Q 20,50 30,30" 
+         opacity="0.6"  stroke-width="2"/>
+        <path d="M 20,50 L 30,50 M 70,50 L 80,50" stroke-width="2"/>
+
+    </symbol>
+</svg>
