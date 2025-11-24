@@ -26,7 +26,7 @@
             }
             
             &-link {
-                font-size: 25px;
+                font-size: 36px;
                 font-weight: 500;
                 color: v.$color_blue;
                    
@@ -44,9 +44,10 @@
             
             &-icon {
                 stroke: v.$color_blue;
-                width: 25px;
-                height: 24px;
-                padding-bottom: 3px;
+                width: 30px;
+                height: 30px;
+                // padding-bottom: 3px;
+                transform: translateY(3px);
             }
         }
         
@@ -60,7 +61,7 @@
 
                 &__item {
                     &-link {
-                        font-size: 18px;
+                        font-size: 22px;
                         font-weight: 500;
                         color: v.$color_blue;
                         @extend %hover-black;
@@ -72,7 +73,7 @@
         .lang {
             @include m.d-flex(start, center);
             &__ru, &__en {
-                font-size: 16px;
+                font-size: 18px;
                 font-weight: 500;
                 color: v.$color-blue;
                 padding: 0 2px;

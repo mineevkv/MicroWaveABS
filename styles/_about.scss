@@ -8,7 +8,7 @@
         margin: 0 auto;
         width: 100%;
         height: 400px;
-        padding: 0 0 0 100px;
+        padding: 0 50px 0 50px;
         @include m.d-flex(start, center, nowrap, row, 40px, 0);
 
         &__content {
@@ -33,7 +33,15 @@
                 border: none;
                 background: v.$color-blue;
                 border-radius: 45px;
-                @include m.font(16px, 700, v.$color_white);
+                @include m.font(18px, 700, v.$color_white);
+                
+                &:hover {
+                    cursor: pointer;
+                    box-shadow: 0 8px 20px 12px rgba(0,0,0,.05);
+                    background: lighten(v.$color_blue, 5%);
+                }
+                
+
             }
 
         }
