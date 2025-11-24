@@ -3,7 +3,83 @@
 @use 'placeholders';
 @use 'sass:color';
 
+
 .header {
-    width: min(100%, 1920px);
     height: 50px;
+
+    .nav {
+        height: 50px;
+        @include m.d-flex(start, center);
+
+        &__title {
+            height: 100%;
+            @include m.d-flex(center, center);
+
+            &:hover {
+                cursor: pointer;
+                .nav__title-link, span {
+                    color: v.$color_black;
+                }
+                .nav__title-icon {
+                    stroke: v.$color_black;
+                }
+            }
+            
+            &-link {
+                font-size: 36px;
+                font-weight: 500;
+                color: v.$color_blue;
+                   
+                span {
+                    font-weight: 700;
+                    color: v.$color_gray;
+                }
+                
+                
+                
+            }
+            a {    
+                @include m.d-flex(center, center);
+            }
+            
+            &-icon {
+                stroke: v.$color_blue;
+                width: 30px;
+                height: 30px;
+                // padding-bottom: 3px;
+                transform: translateY(3px);
+            }
+        }
+        
+        &__links {
+            flex-grow: 1;
+            
+            .list {
+                margin: 0;
+                @include m.d-flex(start, center, nowrap, row, 40px, 0);
+                padding: 0 0 0 min(100px, 5vw);
+
+                &__item {
+                    &-link {
+                        font-size: 22px;
+                        font-weight: 500;
+                        color: v.$color_blue;
+                        @extend %hover-black;
+                    }
+                }
+            }
+        }
+
+        .lang {
+            @include m.d-flex(start, center);
+            &__ru, &__en {
+                font-size: 18px;
+                font-weight: 500;
+                color: v.$color-blue;
+                padding: 0 2px;
+                @extend %hover-black;
+
+            }
+        }
+    }
 }

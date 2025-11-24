@@ -1,0 +1,28 @@
+@use "variables" as v;
+@use "mixins" as m;
+@use "placeholders";
+
+.research-section {
+    padding: 50px 0 0 0;
+
+    .research {
+        margin: 0 auto;
+        
+        &__title {
+            @include m.font(46px, 700, v.$color_blue);
+            text-align: center;
+        }
+
+        &__cards-wrapper {
+
+        margin: 50px 0 0 0;
+        max-width: 100%;
+
+        @include m.d-flex(space-between, center, wrap, row, 20px, 0);
+        }
+
+
+
+
+    }
+}
