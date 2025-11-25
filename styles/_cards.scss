@@ -88,6 +88,17 @@
     border-radius: 20px;
     overflow: hidden;
     box-shadow: 0 8px 20px 12px rgba(0,0,0,.05);
+    position: relative; 
+
+    &__icon {
+        stroke: v.$color_blue;
+        position: absolute;
+        top: 17px;
+        left: 20px;
+        width: 30px;
+        height: 30px;
+        scale: 1.5;
+    }
 
     hr {
         width: 80%;
