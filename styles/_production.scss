@@ -10,8 +10,7 @@
         margin: 0 auto;
 
         &__title {
-            @include m.font(46px, 700, v.$color_blue);
-            text-align: center;
+            @extend %h2-style;
         }
 
         &__cards-wrapper {
