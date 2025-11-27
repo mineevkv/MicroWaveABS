@@ -517,7 +517,7 @@ hr {
 }
 .cooperation-section .cooperation {
   margin: 0 auto;
-  background: url("/assets/img/background/worldmap.webp") center/contain no-repeat;
+  background: url("/assets/img/main/worldmap.webp") center/contain no-repeat;
 }
 .cooperation-section .cooperation__description {
   margin-top: 80px;
