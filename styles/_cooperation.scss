@@ -24,6 +24,7 @@
 
         &__service {
             @include m.font(20px, 400, v.$color_black);
+            margin-bottom: 10px;
 
             &-list {
                 margin-left: 50px;
@@ -32,9 +33,9 @@
                 @include m.d-flex(space-between, flex-start, wrap, row, 20px, 20px);
 
                 li::marker {
-                content: "▸";
+                content: "✔ ";
                 color: v.$color_blue;
-                font-size: 1.5em;
+                font-size: 1em;
                 }
 
                 .list__item {
@@ -46,6 +47,7 @@
         &__button {
             @extend %blue-btn;
             margin: 0 auto;
+            display: block;
         }
         
     }
