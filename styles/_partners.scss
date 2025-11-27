@@ -5,7 +5,10 @@
 .partners-section {
     padding: 80px 0 0 0;
 
+    
+
     .partners {
+        max-width: v.$media_xl;
         margin: 0 auto;
 
         &__title {
@@ -13,20 +16,44 @@
         }
 
         &__logos-wrapper {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            gap: 40px;
             padding: 80px 0 0 0;
+            justify-items: center;
+            align-items: center;
+
+            a {
+                color: transparent;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                height: 100%;
+            }
             
             img {
-                // max-width: 200px;
-                max-height: 130px;
+                max-height: 100px;
+                width: auto;
+                background-color: none;
+                object-fit: contain;
             }
 
             .partners__logo {
-                object-fit: contain;
+                // object-fit: contain;
 
 
-                &_iap {
-                    fill: v.$color_blue;
-                    stroke: v.$color_blue;
+                &_unn {
+                    height: 70px;
+                }
+
+                &_niikam {
+                    height: 70px;
+                }
+
+                &_sao {
+                    height: 80px;
                 }
             }
         }
