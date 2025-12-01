@@ -1,0 +1,55 @@
+@use "variables" as v;
+@use "mixins" as m;
+@use "placeholders";
+
+.cooperation-section {
+    padding: 0 0 0 0;
+
+    .cooperation {
+        margin: 0 auto;
+        // padding-bottom: 130px;
+
+        background: url("../../assets/img/main/worldmap.webp") center/contain no-repeat;
+
+        
+        &__title {
+            @extend %h2-style;
+            
+        }
+
+        &__description{
+            margin-top: 80px;
+            margin-bottom: 20px;
+            @include m.font(24px, 600, v.$color_gray);
+        }
+
+        &__service {
+            @include m.font(20px, 400, v.$color_black);
+            margin-bottom: 10px;
+
+            &-list {
+                margin-left: 50px;
+                margin-right: 50px;
+                margin-bottom: 30px;
+                @include m.d-flex(space-between, flex-start, wrap, row, 20px, 20px);
+
+                li::marker {
+                content: "✔ ";
+                color: v.$color_blue;
+                font-size: 1em;
+                }
+
+                .list__item {
+                    max-width: 45%;
+                }
+            }
+        }
+
+        &__button {
+            @extend %blue-btn;
+            margin: 0 auto;
+            display: block;
+        }
+        
+    }
+}
