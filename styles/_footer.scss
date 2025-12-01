@@ -17,6 +17,7 @@
         width: 100%;
         height: 100%;
         padding: 0 0 38px 0;
+        @include m.d-flex(center, center, wrap, column, 10px, 10px);
         
 
         &__terms {
