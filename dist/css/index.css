@@ -224,7 +224,6 @@ hr {
   font-style: normal;
   color: #0E86D4;
   text-align: center;
-  z-index: 2;
 }
 
 .header .nav__links .list__item-link:hover, .header .nav .lang__ru:hover, .header .nav .lang__en:hover {
