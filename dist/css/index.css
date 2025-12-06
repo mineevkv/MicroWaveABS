@@ -650,7 +650,8 @@ hr {
 }
 .footer-section .footer__up {
   width: 100%;
-  padding: 20px 50px 10px 50px;
+  height: 60px;
+  padding: 10px 50px 10px 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -670,6 +671,7 @@ hr {
      -moz-column-gap: 10px;
           column-gap: 10px;
   row-gap: 10px;
+  line-height: 150%;
 }
 .footer-section .footer__up a {
   color: #FFFFFF;
@@ -686,12 +688,11 @@ hr {
   color: #FFFFFF;
 }
 .footer-section .footer__up .nav__title-icon {
+  margin: 12px 0 0 0;
   stroke: #FFFFFF;
   width: 25px;
   height: 25px;
   scale: 1.32;
-  -webkit-transform: translateY(0px);
-          transform: translateY(0px);
 }
 .footer-section .footer__up .nav__links-1,
 .footer-section .footer__up .nav__links-2,

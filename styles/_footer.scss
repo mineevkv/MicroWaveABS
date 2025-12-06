@@ -13,8 +13,10 @@
 
             &__up {
                 width: 100%;
-                padding: 20px 50px 10px 50px;
+                height: 60px;
+                padding: 10px 50px 10px 50px;
                 @include m.d-flex(space-between, top, nowrap, row, 10px, 10px);
+                line-height: 150%;
 
                 a {
                     color: v.$color_white;
@@ -32,11 +34,12 @@
                     }
         
                     &-icon {
+                        margin: 12px 0 0 0;
                         stroke: v.$color_white;
                         width: 25px;
                         height: 25px;
                         scale: 1.32;
-                        transform: translateY(0px);
+                        // transform: translateY(0px);
                         
                     }
                 }
