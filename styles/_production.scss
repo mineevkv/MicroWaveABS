@@ -15,10 +15,10 @@
 
         &__cards-wrapper {
         
-        margin: 90px 0 0 0;
+        margin: 0 0 0 0;
         max-width: 100%;
 
-        @include m.d-flex(space-between, center, wrap, row, 50px, 0);
+        @include m.d-flex(space-between, center, wrap, row, 0, 0);
         }
     }
 } 

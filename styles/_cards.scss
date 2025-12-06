@@ -79,7 +79,7 @@
 .product-card {
     width: 380px;
     height: 400px;
-    margin: 0 20px 80px 20px;
+    margin: 80px 20px 0 20px;
     @include m.d-flex(flex-start, center, nowrap, column, 10px, 10px);
     background-color: v.$color_white;
 
