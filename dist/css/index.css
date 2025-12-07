@@ -135,7 +135,7 @@ hr {
 .product-card {
   width: 380px;
   height: 400px;
-  margin: 0 20px 80px 20px;
+  margin: 80px 20px 0 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -489,7 +489,7 @@ hr {
   margin: 0 auto;
 }
 .production-section .production__cards-wrapper {
-  margin: 90px 0 0 0;
+  margin: 0 0 0 0;
   max-width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -506,9 +506,9 @@ hr {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-column-gap: 50px;
-     -moz-column-gap: 50px;
-          column-gap: 50px;
+  -webkit-column-gap: 0;
+     -moz-column-gap: 0;
+          column-gap: 0;
   row-gap: 0;
 }
 
@@ -517,6 +517,7 @@ hr {
 }
 .cooperation-section .cooperation {
   margin: 0 auto;
+  padding-top: 80px;
   background: url("../../assets/img/main/worldmap.webp") center/contain no-repeat;
 }
 .cooperation-section .cooperation__description {
@@ -578,6 +579,10 @@ hr {
   max-width: 1200px;
   margin: 0 auto;
 }
+.partners-section .partners__title {
+  position: relative;
+  z-index: 2;
+}
 .partners-section .partners__logos-wrapper {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -604,6 +609,7 @@ hr {
   height: 100%;
 }
 .partners-section .partners__logos-wrapper img {
+  z-index: 1;
   max-height: 100px;
   width: auto;
   background-color: none;
@@ -677,6 +683,8 @@ hr {
   color: #FFFFFF;
 }
 .footer-section .footer__up .nav__title {
+  position: relative;
+  z-index: 2;
   width: 380px;
   -ms-flex-negative: 0;
       flex-shrink: 0;

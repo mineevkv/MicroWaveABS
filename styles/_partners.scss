@@ -11,8 +11,12 @@
         max-width: v.$media_xl;
         margin: 0 auto;
 
+        // TODO: Using Pseudo-elements (::before or ::after)
+
         &__title {
             @extend %h2-style;
+            position: relative;
+            z-index: 2;
         }
 
         &__logos-wrapper {
@@ -34,6 +38,7 @@
             }
             
             img {
+                z-index: 1;
                 max-height: 100px;
                 width: auto;
                 background-color: none;
