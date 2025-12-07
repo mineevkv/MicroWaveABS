@@ -13,41 +13,6 @@
 
         // TODO: Using Pseudo-elements (::before or ::after)
 
-        &__background_small {
-            position: absolute;
-            right: 200px;
-            z-index: 0;
-            width: 800px;
-            height: 576px;
-            overflow: hidden;
-
-            .partners__circle {
-                position: relative;
-                width: 800px;
-                height: 750px;
-                scale: 0.7;
-            }
-            
-        }
-
-        &__background_big {
-            position: absolute;
-            right: 100px;
-            // bottom: 100px;
-            z-index: 0;
-            width: 800px;
-            height: 576px;
-            overflow: hidden;
-
-            .partners__circle {
-                position: relative;
-                width: 800px;
-                height: 750px;
-                scale: 0.9;
-            }
-            
-        }
-
         &__title {
             @extend %h2-style;
             position: relative;

@@ -579,34 +579,6 @@ hr {
   max-width: 1200px;
   margin: 0 auto;
 }
-.partners-section .partners__background_small {
-  position: absolute;
-  right: 200px;
-  z-index: 0;
-  width: 800px;
-  height: 576px;
-  overflow: hidden;
-}
-.partners-section .partners__background_small .partners__circle {
-  position: relative;
-  width: 800px;
-  height: 750px;
-  scale: 0.7;
-}
-.partners-section .partners__background_big {
-  position: absolute;
-  right: 100px;
-  z-index: 0;
-  width: 800px;
-  height: 576px;
-  overflow: hidden;
-}
-.partners-section .partners__background_big .partners__circle {
-  position: relative;
-  width: 800px;
-  height: 750px;
-  scale: 0.9;
-}
 .partners-section .partners__title {
   position: relative;
   z-index: 2;
