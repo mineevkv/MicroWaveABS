@@ -64,231 +64,238 @@
   </header>
 
   <main aria-label="main content">
+    <div class="sections-wrapper">
 
-    <section class="about-section" id="about-id">
-      <div class="container">
-        <div class="about">
-          <div class="about__content">
-            <h1 class="about__content-title">
-              Кто мы?
-            </h1>
 
-            <p class="about__content-description">Команда молодых ученых, активно внедряющая аддитивные
-              технологии<br>3D-печати в область радиотехники миллиметрового диапазона длин волн.</p>
 
-            <button class="about__content-button">
-              Узнать больше
+      <section class="about-section" id="about-id">
+        <div class="container">
+          <div class="about">
+            <div class="about__content">
+              <h1 class="about__content-title">
+                Кто мы?
+              </h1>
+
+              <p class="about__content-description">Команда молодых ученых, активно внедряющая аддитивные
+                технологии<br>3D-печати в область радиотехники миллиметрового диапазона длин волн.</p>
+
+              <button class="about__content-button">
+                Узнать больше
+              </button>
+            </div>
+
+            <img src="assets/img/main/radiometer.webp" alt="radiometer img" class="about__img-preview" />
+          </div>
+
+        </div>
+      </section>
+
+      <section class="research-section" id="research-id">
+        <div class="container">
+          <div class="research">
+            <h2 class="research__title">
+              Наши исследования
+            </h2>
+
+            <div class="research__cards-wrapper">
+
+              <figure class="info-card card--absorber" aria-label="card absorber">
+                <svg class="info-card__icon icon--absorber" aria-label="absorber img">
+                  <use href="assets/sprites.svg#absorber-icon"></use>
+                </svg>
+                <h3 class="info-card__title">Поглотители</h3>
+                <p class="info-card__description">Широкополосные микроволновые поглотители </p>
+                <a href="#" class="info-card__link link-absorber">Подробнее</a>
+              </figure>
+
+              <figure class="info-card card--load" aria-label="card load">
+                <svg class="info-card__icon icon--load" aria-label="load img">
+                  <use href="assets/sprites.svg#load-icon"></use>
+                </svg>
+                <h3 class="info-card__title">Нагрузки</h3>
+                <p class="info-card__description">Квазиоптические согласованные нагрузки</p>
+                <a href="#" class="info-card__link link-load">Подробнее</a>
+              </figure>
+
+              <figure class="info-card card--lens" aria-label="card lens">
+                <svg class="info-card__icon icon--lens" aria-label="lens img">
+                  <use href="assets/sprites.svg#lens-icon"></use>
+                </svg>
+                <h3 class="info-card__title">Линзы</h3>
+                <p class="info-card__description">Однородные и многослойные<br>линзы</p>
+                <a href="#" class="info-card__link link-lens">Подробнее</a>
+
+              </figure>
+
+              <figure class="info-card card--resonator" aria-label="card resonator">
+                <svg class="info-card__icon icon--resonator" aria-label="resonator img">
+                  <use href="assets/sprites.svg#resonator-icon"></use>
+                </svg>
+                <h3 class="info-card__title">Резонаторы</h3>
+                <p class="info-card__description">Резонансные <br> фильтры и поляризаторы</p>
+                <a href="#" class="info-card__link link-resonator">Подробнее</a>
+              </figure>
+
+            </div>
+          </div>
+      </section>
+
+      <section class="production-section" id="production-id">
+        <div class="container">
+          <div class="production">
+            <h2 class="production__title">Наша продукция</h2>
+
+            <div class="production__cards-wrapper">
+
+              <figure class="product-card card--absorber" aria-label="card absorber">
+                <svg class="product-card__icon" aria-label="logo img">
+                  <use href="assets/logo.svg#logo-icon"></use>
+                </svg>
+                <img src="assets/img/cards/Absorber.webp" alt="absorber img" class="product-card__img-preview" />
+                <h4 class="product-card__title">Микроволновый поглотитель</h4>
+                <hr>
+                <p class="product-card__description">Для локализации области зондирования микроволнового интерферометра
+                  W-диапазона</p>
+
+              </figure>
+
+              <figure class="product-card card--lens" aria-label="card lens">
+                <svg class="product-card__icon" aria-label="logo img">
+                  <use href="assets/logo.svg#logo-icon"></use>
+                </svg>
+                <img src="assets/img/cards/Lens.webp" alt="lens img" class="product-card__img-preview" />
+                <h4 class="product-card__title">Диэлектрическая линза</h4>
+                <hr>
+                <p class="product-card__description">Для рупорно-линзовой антенны <br> Ka-диапазона с диаграммой
+                  направленности менее 8 градусов</p>
+              </figure>
+
+              <figure class="product-card card--load" aria-label="card load">
+                <svg class="product-card__icon" aria-label="logo img">
+                  <use href="assets/logo.svg#logo-icon"></use>
+                </svg>
+                <img src="assets/img/cards/Load.webp" alt="load img" class="product-card__img-preview" />
+                <h4 class="product-card__title">Согласованная нагрузка<br></h4>
+                <hr>
+                <p class="product-card__description">Для создания безэховых зон в прецизионных измерительных стендах
+                  D-диапазона</p>
+              </figure>
+
+              <figure class="product-card card--calibrator" aria-label="card calibrator">
+                <svg class="product-card__icon" aria-label="logo img">
+                  <use href="assets/logo.svg#logo-icon"></use>
+                </svg>
+                <img src="assets/img/cards/Calibrator.webp" alt="calibrator img" class="product-card__img-preview" />
+                <h4 class="product-card__title">Калибратор</h4>
+                <hr>
+                <p class="product-card__description">Для калибровки радиометрического комплекса Y-диапазона, работающего
+                  на длине волны 1,3 мм </p>
+
+              </figure>
+
+              <figure class="product-card card--grin" aria-label="card grin">
+                <svg class="product-card__icon" aria-label="logo img">
+                  <use href="assets/logo.svg#logo-icon"></use>
+                </svg>
+                <img src="assets/img/cards/GRIN.webp" alt="grin img" class="product-card__img-preview" />
+                <h4 class="product-card__title">Гироидная структура</h4>
+                <hr>
+                <p class="product-card__description">Для патч антенн малогабаритных детекторов поля E-диапазона</p>
+              </figure>
+
+              <figure class="product-card card--window" aria-label="card window">
+                <svg class="product-card__icon" aria-label="logo img">
+                  <use href="assets/logo.svg#logo-icon"></use>
+                </svg>
+                <img src="assets/img/cards/Window.webp" alt="window img" class="product-card__img-preview" />
+                <h4 class="product-card__title">Радиопрозрачное окно</h4>
+                <hr>
+                <p class="product-card__description">Вакуумное окно ввода-вывода излучения для детектора W-диапазона</p>
+
+              </figure>
+
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="cooperation-section" id="cooperation-id">
+        <div class="container">
+          <div class="cooperation">
+            <h2 class="cooperation__title">Сотрудничество</h2>
+
+            <p class="cooperation__description">Мы работаем с научно-исследовательскими институтами и промышленными
+              предприятиями и всегда заинтересованы в новых контактах. Свяжитесь с нами для обсуждения дальнейшего
+              сотрудничества.</p>
+
+            <div class="cooperation__service">
+              <ul class="cooperation__service-list list" aria-label="cooperation service list">
+                <li class="list__item" aria-label="first service">
+                  Расчет, моделирование и изготовление компонент радиоэлектронной аппаратуры методами 3D-печати по
+                  Вашему
+                  техническому заданию.
+                </li>
+                <li class="list__item" aria-label="second service">
+                  Разработка программного обеспечения для автоматизированного проектирования 3D-моделей.
+                </li>
+                <li class="list__item" aria-label="third service">
+                  Электрофизические измерения на аттестованном измерительном оборудовании в сантиметровом и
+                  миллиметровом
+                  диапазонах длин волн.
+                </li>
+                <li class="list__item" aria-label="fourth service">
+                  Проектирование 3D-принтера под Ваши технические задачи.
+                </li>
+                <li class="list__item" aria-label="fifth service">
+                  Помощь с развертыванием технологической линии 3D-печати для мелкосериного макетного производства.
+                </li>
+                <li class="list__item" aria-label="six service">
+                  Содействие в подготовке заявок на получение патентов РФ на изобретения, полезные модели и промышленные
+                  образцы.
+                </li>
+
+              </ul>
+            </div>
+            <button class="cooperation__button">
+              Связаться с нами
             </button>
           </div>
-
-          <img src="assets/img/main/radiometer.webp" alt="radiometer img" class="about__img-preview" />
         </div>
+      </section>
 
-      </div>
-    </section>
+      <section class="partners-section" id="partners-id">
+        <div class="container">
+          <div class="partners">
+            <h2 class="partners__title">Наши партнеры</h2>
 
-    <section class="research-section" id="research-id">
-      <div class="container">
-        <div class="research">
-          <h2 class="research__title">
-            Наши исследования
-          </h2>
+            <div class="partners__logos-wrapper">
 
-          <div class="research__cards-wrapper">
+              <a href="https://www.ipfran.ru/">
+                <img src="assets/img/partners_logos/iap.svg" alt="logo IAP" class="partners__logo_iap" />
+              </a>
 
-            <figure class="info-card card--absorber" aria-label="card absorber">
-              <svg class="info-card__icon icon--absorber" aria-label="absorber img">
-                <use href="assets/sprites.svg#absorber-icon"></use>
-              </svg>
-              <h3 class="info-card__title">Поглотители</h3>
-              <p class="info-card__description">Широкополосные микроволновые поглотители </p>
-              <a href="#" class="info-card__link link-absorber">Подробнее</a>
-            </figure>
+              <a href="http://www.unn.ru/">
+                <img src="assets/img/partners_logos/unn.svg" alt="logo UNN" class="partners__logo_unn" />
+              </a>
 
-            <figure class="info-card card--load" aria-label="card load">
-              <svg class="info-card__icon icon--load" aria-label="load img">
-                <use href="assets/sprites.svg#load-icon"></use>
-              </svg>
-              <h3 class="info-card__title">Нагрузки</h3>
-              <p class="info-card__description">Квазиоптические согласованные нагрузки</p>
-              <a href="#" class="info-card__link link-load">Подробнее</a>
-            </figure>
+              <a href="https://bmstu.ru/">
+                <img src="assets/img/partners_logos/mstu.png" alt="logo MSTU" class="partners__logo_mstu" />
+              </a>
 
-            <figure class="info-card card--lens" aria-label="card lens">
-              <svg class="info-card__icon icon--lens" aria-label="lens img">
-                <use href="assets/sprites.svg#lens-icon"></use>
-              </svg>
-              <h3 class="info-card__title">Линзы</h3>
-              <p class="info-card__description">Однородные и многослойные<br>линзы</p>
-              <a href="#" class="info-card__link link-lens">Подробнее</a>
+              <a href="https://asc-lebedev.ru/">
+                <img src="assets/img/partners_logos/asc.png" alt="logo ASC" class="partners__logo_asc" />
+              </a>
+              <a href="https://www.niikam.ru/">
+                <img src="assets/img/partners_logos/niikam.png" alt="logo NIIKAM" class="partners__logo_niikam" />
+              </a>
 
-            </figure>
+              <a href="https://www.sao.ru/">
+                <img src="assets/img/partners_logos/sao.png" alt="logo SAO" class="partners__logo_sao" />
+              </a>
 
-            <figure class="info-card card--resonator" aria-label="card resonator">
-              <svg class="info-card__icon icon--resonator" aria-label="resonator img">
-                <use href="assets/sprites.svg#resonator-icon"></use>
-              </svg>
-              <h3 class="info-card__title">Резонаторы</h3>
-              <p class="info-card__description">Резонансные <br> фильтры и поляризаторы</p>
-              <a href="#" class="info-card__link link-resonator">Подробнее</a>
-            </figure>
+      </section>
+    </div>
 
-          </div>
-        </div>
-    </section>
-
-    <section class="production-section" id="production-id">
-      <div class="container">
-        <div class="production">
-          <h2 class="production__title">Наша продукция</h2>
-
-          <div class="production__cards-wrapper">
-
-            <figure class="product-card card--absorber" aria-label="card absorber">
-              <svg class="product-card__icon" aria-label="logo img">
-                <use href="assets/logo.svg#logo-icon"></use>
-              </svg>
-              <img src="assets/img/cards/Absorber.webp" alt="absorber img" class="product-card__img-preview" />
-              <h4 class="product-card__title">Микроволновый поглотитель</h4>
-              <hr>
-              <p class="product-card__description">Для локализации области зондирования микроволнового интерферометра
-                W-диапазона</p>
-
-            </figure>
-
-            <figure class="product-card card--lens" aria-label="card lens">
-              <svg class="product-card__icon" aria-label="logo img">
-                <use href="assets/logo.svg#logo-icon"></use>
-              </svg>
-              <img src="assets/img/cards/Lens.webp" alt="lens img" class="product-card__img-preview" />
-              <h4 class="product-card__title">Диэлектрическая линза</h4>
-              <hr>
-              <p class="product-card__description">Для рупорно-линзовой антенны <br> Ka-диапазона с диаграммой
-                направленности менее 8 градусов</p>
-            </figure>
-
-            <figure class="product-card card--load" aria-label="card load">
-              <svg class="product-card__icon" aria-label="logo img">
-                <use href="assets/logo.svg#logo-icon"></use>
-              </svg>
-              <img src="assets/img/cards/Load.webp" alt="load img" class="product-card__img-preview" />
-              <h4 class="product-card__title">Согласованная нагрузка<br></h4>
-              <hr>
-              <p class="product-card__description">Для создания безэховых зон в прецизионных измерительных стендах
-                D-диапазона</p>
-            </figure>
-
-            <figure class="product-card card--calibrator" aria-label="card calibrator">
-              <svg class="product-card__icon" aria-label="logo img">
-                <use href="assets/logo.svg#logo-icon"></use>
-              </svg>
-              <img src="assets/img/cards/Calibrator.webp" alt="calibrator img" class="product-card__img-preview" />
-              <h4 class="product-card__title">Калибратор</h4>
-              <hr>
-              <p class="product-card__description">Для калибровки радиометрического комплекса Y-диапазона, работающего
-                на длине волны 1,3 мм </p>
-
-            </figure>
-
-            <figure class="product-card card--grin" aria-label="card grin">
-              <svg class="product-card__icon" aria-label="logo img">
-                <use href="assets/logo.svg#logo-icon"></use>
-              </svg>
-              <img src="assets/img/cards/GRIN.webp" alt="grin img" class="product-card__img-preview" />
-              <h4 class="product-card__title">Гироидная структура</h4>
-              <hr>
-              <p class="product-card__description">Для патч антенн малогабаритных детекторов поля E-диапазона</p>
-            </figure>
-
-            <figure class="product-card card--window" aria-label="card window">
-              <svg class="product-card__icon" aria-label="logo img">
-                <use href="assets/logo.svg#logo-icon"></use>
-              </svg>
-              <img src="assets/img/cards/Window.webp" alt="window img" class="product-card__img-preview" />
-              <h4 class="product-card__title">Радиопрозрачное окно</h4>
-              <hr>
-              <p class="product-card__description">Вакуумное окно ввода-вывода излучения для детектора W-диапазона</p>
-
-            </figure>
-
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="cooperation-section" id="cooperation-id">
-      <div class="container">
-        <div class="cooperation">
-          <h2 class="cooperation__title">Сотрудничество</h2>
-
-          <p class="cooperation__description">Мы работаем с научно-исследовательскими институтами и промышленными
-            предприятиями и всегда заинтересованы в новых контактах. Свяжитесь с нами для обсуждения дальнейшего
-            сотрудничества.</p>
-
-          <div class="cooperation__service">
-            <ul class="cooperation__service-list list" aria-label="cooperation service list">
-              <li class="list__item" aria-label="first service">
-                Расчет, моделирование и изготовление компонент радиоэлектронной аппаратуры методами 3D-печати по Вашему
-                техническому заданию.
-              </li>
-              <li class="list__item" aria-label="second service">
-                Разработка программного обеспечения для автоматизированного проектирования 3D-моделей.
-              </li>
-              <li class="list__item" aria-label="third service">
-                Электрофизические измерения на аттестованном измерительном оборудовании в сантиметровом и миллиметровом
-                диапазонах длин волн.
-              </li>
-              <li class="list__item" aria-label="fourth service">
-                Проектирование 3D-принтера под Ваши технические задачи.
-              </li>
-              <li class="list__item" aria-label="fifth service">
-                Помощь с развертыванием технологической линии 3D-печати для мелкосериного макетного производства.
-              </li>
-              <li class="list__item" aria-label="six service">
-                Содействие в подготовке заявок на получение патентов РФ на изобретения, полезные модели и промышленные
-                образцы.
-              </li>
-
-            </ul>
-          </div>
-          <button class="cooperation__button">
-            Связаться с нами
-          </button>
-        </div>
-      </div>
-    </section>
-
-    <section class="partners-section" id="partners-id">
-      <div class="container">
-        <div class="partners">
-          <h2 class="partners__title">Наши партнеры</h2>
-          
-          <div class="partners__logos-wrapper">
-            
-            <a href="https://www.ipfran.ru/">
-              <img src="assets/img/partners_logos/iap.svg" alt="logo IAP" class="partners__logo_iap" />
-            </a>
-
-            <a href="http://www.unn.ru/">
-              <img src="assets/img/partners_logos/unn.svg" alt="logo UNN" class="partners__logo_unn" />
-            </a>
-            
-            <a href="https://bmstu.ru/">
-              <img src="assets/img/partners_logos/mstu.png" alt="logo MSTU" class="partners__logo_mstu" />
-            </a>
-            
-            <a href="https://asc-lebedev.ru/">
-              <img src="assets/img/partners_logos/asc.png" alt="logo ASC" class="partners__logo_asc" />
-            </a>
-            <a href="https://www.niikam.ru/">
-              <img src="assets/img/partners_logos/niikam.png" alt="logo NIIKAM" class="partners__logo_niikam" />
-            </a>
-            
-            <a href="https://www.sao.ru/">
-              <img src="assets/img/partners_logos/sao.png" alt="logo SAO" class="partners__logo_sao" />
-            </a>
-            
-    </section>
 
   </main>
 
