@@ -3,6 +3,12 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   color: #434141;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  height: 100%;
 }
 
 body {
@@ -26,11 +32,6 @@ main .sections-wrapper::before {
   background: url("../../assets/img/main/lines.webp") left top no-repeat;
   opacity: 0.15; /* 20% transparency */
   z-index: -1;
-}
-
-h1, h2, h3, h4, h5, h6, ul, p, button, body {
-  margin: 0;
-  padding: 0;
 }
 
 a {
@@ -237,7 +238,7 @@ hr {
   color: #434141;
 }
 
-.contact-section .contact__title, .partners-section .partners__title, .cooperation-section .cooperation__title, .production-section .production__title, .research-section .research__title {
+.team-section .team__title, .contact-section .contact__title, .partners-section .partners__title, .cooperation-section .cooperation__title, .production-section .production__title, .research-section .research__title {
   font-size: 46px;
   font-weight: 700;
   font-style: normal;
@@ -838,4 +839,11 @@ hr {
 .contact-section .contact__form-button {
   margin: 0 auto;
   margin-top: 20px;
+}
+
+.team-section {
+  padding: 80px 0 80px 0;
+}
+.team-section .team {
+  margin: 0 auto;
 }/*# sourceMappingURL=index.css.map */
