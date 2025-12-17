@@ -20,11 +20,14 @@ body {
     min-height: 100vh;
     // border: 5px solid red !important; /* Увидите границы body */
     // background-color: rgba(255,0,0,0.1) !important;
+    display: flex;
+    flex-direction: column;
     
 
 }
 
 main {
+    flex: 1;
     .sections-wrapper {
     max-width: v.$media_xxl;
     margin: 0 auto;
