@@ -858,4 +858,33 @@ hr {
 }
 .team-section .team {
   margin: 0 auto;
+}
+.team-section .team__content {
+  margin-top: 80px;
+  margin-bottom: 20px;
+  font-size: 18px;
+  font-weight: 400;
+  font-style: normal;
+  color: #5A5A5A;
+}
+.team-section .team__employees-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-column-gap: 30px;
+     -moz-column-gap: 30px;
+          column-gap: 30px;
+  row-gap: 30px;
 }/*# sourceMappingURL=index.css.map */

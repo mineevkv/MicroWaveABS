@@ -13,6 +13,16 @@
         &__title {
             @extend %h2-style;
         }
+
+        &__content {
+            margin-top: 80px;
+            margin-bottom: 20px;
+            @include m.font(18px, 400, v.$color_gray);
+        }
+
+        &__employees-list {
+            @include m.d-flex(left, left, wrap, column, 30px, 30px);
+        }
     }
 
 }
