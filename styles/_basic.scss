@@ -4,16 +4,30 @@
 * {
     box-sizing: border-box;
     color: v.$color-black;
+    margin: 0;
+    padding: 0;
+
+    // outline: 1px dotted blue; /* Покажет все элементы */
+}
+
+html {
+    height: 100%;
 }
 
 body {
     background-color: v.$color-white;
     font-family: v.$font-family;
     min-height: 100vh;
+    // border: 5px solid red !important; /* Увидите границы body */
+    // background-color: rgba(255,0,0,0.1) !important;
+    display: flex;
+    flex-direction: column;
+    
 
 }
 
 main {
+    flex: 1;
     .sections-wrapper {
     max-width: v.$media_xxl;
     margin: 0 auto;
@@ -33,12 +47,6 @@ main {
         z-index: -1;
     }
 
-}
-
-
-h1, h2, h3, h4, h5, h6, ul, p, button, body {
-    margin: 0;
-    padding: 0;
 }
 
 a {

@@ -3,14 +3,32 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   color: #434141;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  height: 100%;
 }
 
 body {
   background-color: #FFFFFF;
   font-family: "Montserrat", sans-serif;
   min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
+main {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
 main .sections-wrapper {
   max-width: 1400px;
   margin: 0 auto;
@@ -26,11 +44,6 @@ main .sections-wrapper::before {
   background: url("../../assets/img/main/lines.webp") left top no-repeat;
   opacity: 0.15; /* 20% transparency */
   z-index: -1;
-}
-
-h1, h2, h3, h4, h5, h6, ul, p, button, body {
-  margin: 0;
-  padding: 0;
 }
 
 a {
@@ -237,7 +250,7 @@ hr {
   color: #434141;
 }
 
-.contact-section .contact__title, .partners-section .partners__title, .cooperation-section .cooperation__title, .production-section .production__title, .research-section .research__title {
+.team-section .team__title, .contact-section .contact__title, .partners-section .partners__title, .cooperation-section .cooperation__title, .production-section .production__title, .research-section .research__title {
   font-size: 46px;
   font-weight: 700;
   font-style: normal;
@@ -597,6 +610,7 @@ hr {
 .partners-section .partners {
   max-width: 1200px;
   margin: 0 auto;
+  margin-bottom: 80px;
 }
 .partners-section .partners__title {
   position: relative;
@@ -650,7 +664,6 @@ hr {
   background-color: #1C1C1C;
 }
 .footer-section .footer {
-  margin-top: 80px;
   width: 100%;
   height: 100%;
   display: -webkit-box;
@@ -838,4 +851,11 @@ hr {
 .contact-section .contact__form-button {
   margin: 0 auto;
   margin-top: 20px;
+}
+
+.team-section {
+  padding: 80px 0 80px 0;
+}
+.team-section .team {
+  margin: 0 auto;
 }/*# sourceMappingURL=index.css.map */
