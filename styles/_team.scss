@@ -2,27 +2,59 @@
 @use "mixins" as m;
 @use "placeholders";
 
-
-
 .team-section {
-    padding: 80px 0 80px 0;
+  padding: 80px 0 80px 0;
 
-    .team {
-        margin: 0 auto;
+  .team {
+    margin: 0 auto;
 
-        &__title {
-            @extend %h2-style;
-        }
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
-        &__content {
-            margin-top: 80px;
-            margin-bottom: 20px;
-            @include m.font(18px, 400, v.$color_gray);
-        }
-
-        &__employees-list {
-            @include m.d-flex(left, left, wrap, column, 30px, 30px);
-        }
+    &__title {
+      @extend %h2-style;
     }
 
+    &__content {
+      margin-top: 62px;
+      margin-bottom: 20px;
+      @include m.font(20px, 400, v.$color-black);
+      max-width: 1160px;
+      text-align: justify;
+    }
+
+    &__employees-list {
+      @include m.d-flex(center, start, wrap, row, 10px, 10px);
+
+      .list__item {
+        width: 300px;
+        // height: 300px;
+        margin: 30px 20px 20px 20px;
+        @include m.d-flex(center, center, nowrap, column, 10px, 10px);
+        text-align: center;
+
+        .employee__position {
+          @include m.font(18px, 500, v.$color-black);
+          text-align: center;
+            }
+
+        .employee__name {
+          @include m.font(24px, 600, v.$color_blue);
+          text-align: center;
+          margin-top: 10px;
+        }
+
+        .employee__img {
+          // width: 120px;
+          height: 220px;
+          border-radius: 50%;
+          aspect-ratio: 1 / 1;
+          overflow: hidden;
+          object-fit: cover;
+          border: 10px solid v.$color_light_gray;
+        }
+      }
+    }
+  }
 }
