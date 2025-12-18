@@ -858,35 +858,95 @@ hr {
 }
 .team-section .team {
   margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .team-section .team__content {
-  margin-top: 80px;
+  margin-top: 62px;
   margin-bottom: 20px;
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 400;
   font-style: normal;
-  color: #5A5A5A;
+  color: #434141;
+  max-width: 1160px;
+  text-align: justify;
 }
 .team-section .team__employees-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: left;
-      -ms-flex-pack: left;
-          justify-content: left;
-  -webkit-box-align: left;
-      -ms-flex-align: left;
-          align-items: left;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-column-gap: 10px;
+     -moz-column-gap: 10px;
+          column-gap: 10px;
+  row-gap: 10px;
+}
+.team-section .team__employees-list .list__item {
+  width: 300px;
+  margin: 30px 20px 20px 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-column-gap: 30px;
-     -moz-column-gap: 30px;
-          column-gap: 30px;
-  row-gap: 30px;
+  -webkit-column-gap: 10px;
+     -moz-column-gap: 10px;
+          column-gap: 10px;
+  row-gap: 10px;
+  text-align: center;
+}
+.team-section .team__employees-list .list__item .employee__position {
+  font-size: 18px;
+  font-weight: 500;
+  font-style: normal;
+  color: #434141;
+  text-align: center;
+}
+.team-section .team__employees-list .list__item .employee__name {
+  font-size: 24px;
+  font-weight: 600;
+  font-style: normal;
+  color: #0E86D4;
+  text-align: center;
+  margin-top: 10px;
+}
+.team-section .team__employees-list .list__item .employee__img {
+  height: 220px;
+  border-radius: 50%;
+  aspect-ratio: 1/1;
+  overflow: hidden;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border: 10px solid #F5F5F5;
 }
 
 .absorber-section {
