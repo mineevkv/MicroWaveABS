@@ -467,9 +467,45 @@ hr {
   }
   .header .nav .lang__ru, .header .nav .lang__en {
     font-size: 16px;
-    font-weight: 500;
-    color: #0E86D4;
     padding: 30px 2px;
+  }
+}
+@media (max-width: 1200px) {
+  .header .nav {
+    max-width: 800px;
+  }
+  .header .nav__title {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  .header .nav {
+    max-width: 800px;
+  }
+  .header .nav__title {
+    padding-top: 5px;
+    padding-left: 10px;
+    display: block;
+  }
+  .header .nav__title-link {
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    font-size: 36px;
+  }
+  .header .nav__title-icon {
+    stroke: #0E86D4;
+    width: 30px;
+    height: 30px;
+    scale: 1.32;
+    -webkit-transform: translateY(3px);
+            transform: translateY(3px);
+  }
+  .header .nav__links {
+    display: none;
+  }
+  .header .nav .lang {
+    display: none;
   }
 }
 
