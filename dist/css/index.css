@@ -444,9 +444,32 @@ hr {
   color: #0E86D4;
   padding: 0 2px;
 }
-@media (max-width: 992px) {
+@media (max-width: 1400px) {
+  .header .nav {
+    max-width: 1200px;
+  }
+  .header .nav__title-link {
+    font-size: 26px;
+  }
+  .header .nav__title-icon {
+    stroke: #0E86D4;
+    width: 30px;
+    height: 30px;
+    scale: 1.1;
+    -webkit-transform: translateY(2px);
+            transform: translateY(2px);
+  }
+  .header .nav__links .list {
+    padding: 0 0 0 min(100px, 2vw);
+  }
   .header .nav__links .list__item-link {
     font-size: 18px;
+  }
+  .header .nav .lang__ru, .header .nav .lang__en {
+    font-size: 16px;
+    font-weight: 500;
+    color: #0E86D4;
+    padding: 30px 2px;
   }
 }
 

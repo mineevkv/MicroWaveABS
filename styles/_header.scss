@@ -81,10 +81,29 @@
     }
   }
 
-  @media (max-width: v.$media_lg) {
+  @media (max-width: v.$media_xxl) {
     .nav {
+      max-width: 1200px;
+
+      &__title {
+
+        &-link {
+          font-size: 26px;
+        }
+
+        &-icon {
+          stroke: v.$color_blue;
+          width: 30px;
+          height: 30px;
+          scale: 1.1;
+          transform: translateY(2px);
+        }
+    }
+
+
       &__links {
         .list {
+          padding: 0 0 0 min(100px, 2vw);
           &__item {
             &-link {
               font-size: 18px;
@@ -92,6 +111,16 @@
           }
         }
       }
+
+    .lang {
+      &__ru,
+      &__en {
+        font-size: 16px;
+        font-weight: 500;
+        color: v.$color-blue;
+        padding: 30px 2px;
+      }
+    }
     }
   }
 }
