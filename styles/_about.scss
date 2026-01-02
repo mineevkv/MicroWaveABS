@@ -93,4 +93,12 @@
       }
     }
   }
+
+    @media (max-width: v.$media_min) {
+        .about {
+            &__img-preview {
+                width: 90vw;
+            }
+        }
+    }
 }

@@ -559,6 +559,19 @@ hr {
     display: none;
   }
 }
+@media (max-width: 428px) {
+  .header .nav__title-link {
+    font-size: 26px;
+  }
+  .header .nav__title-icon {
+    stroke: #0E86D4;
+    width: 30px;
+    height: 30px;
+    scale: 1.1;
+    -webkit-transform: translateY(2px);
+            transform: translateY(2px);
+  }
+}
 
 .about-section {
   padding: 100px 0 0 0;
@@ -663,6 +676,11 @@ hr {
     top: 0;
     margin-top: 20px;
     width: 400px;
+  }
+}
+@media (max-width: 428px) {
+  .about-section .about__img-preview {
+    width: 90vw;
   }
 }
 
@@ -887,8 +905,8 @@ hr {
 }
 @media (max-width: 428px) {
   .partners-section .partners__logos-wrapper img {
-    width: 80vw;
-    max-height: 70px;
+    width: 90vw;
+    max-height: 80px;
   }
 }
 
