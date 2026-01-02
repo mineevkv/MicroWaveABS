@@ -2,23 +2,29 @@
 @use "mixins" as m;
 @use "placeholders";
 
-
 .production-section {
-    padding: 80px 0 0 0;
-    
-    .production {
-        margin: 0 auto;
+  padding: 80px 0 0 0;
 
-        &__title {
-            @extend %h2-style;
-        }
+  .production {
+    margin: 0 auto;
 
-        &__cards-wrapper {
-        
-        margin: 0 0 0 0;
-        max-width: 100%;
-
-        @include m.d-flex(space-between, center, wrap, row, 0, 0);
-        }
+    &__title {
+      @extend %h2-style;
     }
-} 
+
+    &__cards-wrapper {
+      margin: 0 0 0 0;
+      max-width: 100%;
+
+      @include m.d-flex(space-between, center, wrap, row, 0, 0);
+    }
+  }
+
+  @media (max-width: v.$media_xxl) {
+    .production {
+      &__cards-wrapper {
+        justify-content: center;
+      }
+    }
+  }
+}

@@ -261,6 +261,14 @@ hr {
   color: #0E86D4;
   text-align: center;
 }
+@media (max-width: 992px) {
+  .lens-section .lens__title, .load-section .load__title, .absorber-section .absorber__title, .team-section .team__title, .contact-section .contact__title, .partners-section .partners__title, .cooperation-section .cooperation__title, .production-section .production__title, .research-section .research__title {
+    font-size: 36px;
+    font-weight: 700;
+    font-style: normal;
+    color: #0E86D4;
+  }
+}
 
 .header .nav__links .list__item-link:hover, .header .nav .lang__ru:hover, .header .nav .lang__en:hover {
   cursor: pointer;
@@ -278,6 +286,16 @@ hr {
   font-weight: 700;
   font-style: normal;
   color: #FFFFFF;
+}
+@media (max-width: 992px) {
+  .contact-section .contact__form-button, .cooperation-section .cooperation__button, .about-section .about__content-button {
+    width: 180px;
+    height: 50px;
+    font-size: 16px;
+    font-weight: 700;
+    font-style: normal;
+    color: #FFFFFF;
+  }
 }
 .contact-section .contact__form-button:hover, .cooperation-section .cooperation__button:hover, .about-section .about__content-button:hover {
   cursor: pointer;
@@ -555,6 +573,65 @@ hr {
   width: 600px;
   border-radius: 20px;
 }
+@media (max-width: 1400px) {
+  .about-section .about__content h1 {
+    font-size: 32px;
+  }
+  .about-section .about__content-description {
+    font-size: 22px;
+  }
+  .about-section .about__img-preview {
+    width: 560px;
+  }
+}
+@media (max-width: 1200px) {
+  .about-section .about__img-preview {
+    width: 400px;
+  }
+}
+@media (max-width: 992px) {
+  .about-section .about__content h1 {
+    font-size: 24px;
+  }
+  .about-section .about__content-description {
+    font-size: 18px;
+  }
+  .about-section .about__img-preview {
+    width: 300px;
+  }
+}
+@media (max-width: 768px) {
+  .about-section .about {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-column-gap: 40px;
+       -moz-column-gap: 40px;
+            column-gap: 40px;
+    row-gap: 20px;
+  }
+  .about-section .about__content {
+    margin-top: 100px;
+  }
+  .about-section .about__img-preview {
+    position: absolute;
+    top: 0;
+    margin-top: 20px;
+    width: 400px;
+  }
+}
 
 .research-section {
   padding: 80px 0 0 0;
@@ -585,6 +662,13 @@ hr {
           column-gap: 20px;
   row-gap: 0;
 }
+@media (max-width: 1200px) {
+  .research-section .research__cards-wrapper {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
 
 .production-section {
   padding: 80px 0 0 0;
@@ -614,6 +698,13 @@ hr {
      -moz-column-gap: 0;
           column-gap: 0;
   row-gap: 0;
+}
+@media (max-width: 1400px) {
+  .production-section .production__cards-wrapper {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 .cooperation-section {
@@ -729,6 +820,18 @@ hr {
 }
 .partners-section .partners__logos-wrapper .partners__logo_sao {
   height: 80px;
+}
+@media (max-width: 1200px) {
+  .partners-section .partners__logos-wrapper {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+}
+@media (max-width: 768px) {
+  .partners-section .partners__logos-wrapper {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+  }
 }
 
 .footer-section {
@@ -864,6 +967,11 @@ hr {
   font-size: 14px;
   font-weight: 300;
   padding-left: 50px;
+}
+@media (max-width: 992px) {
+  .footer-section .footer__up .nav__title {
+    display: none;
+  }
 }
 
 .contact-section {

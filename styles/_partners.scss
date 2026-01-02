@@ -64,4 +64,24 @@
             }
         }
     }
+
+    @media (max-width: v.$media_xl) {
+        .partners {
+            &__logos-wrapper {
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: repeat(3, 1fr);
+                }
+            }
+        }
+
+    
+    @media (max-width: v.$media_md) {
+        .partners {
+            &__logos-wrapper {
+                grid-template-columns: repeat(1, 1fr);
+                grid-template-rows: repeat(6, 1fr);
+                }
+            }
+        }
+    
 }
