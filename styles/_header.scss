@@ -162,4 +162,22 @@
       }
     }
   }
+
+  @media (max-width: v.$media_min) {
+    .nav {
+          &__title {
+        &-link {
+          font-size: 26px;
+        }
+
+        &-icon {
+          stroke: v.$color_blue;
+          width: 30px;
+          height: 30px;
+          scale: 1.1;
+          transform: translateY(2px);
+        }
+      }
+  }
+}
 }
