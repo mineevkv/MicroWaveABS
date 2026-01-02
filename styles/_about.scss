@@ -37,4 +37,71 @@
             border-radius: 20px;
         }
     }
+
+    @media (max-width: v.$media_xxl) {
+        .about {
+            &__content {
+                h1 {
+                    font-size: 32px;
+                }
+
+                 &-description {
+                    font-size: 22px;
+                }
+            }
+
+            &__img-preview {
+                width: 560px;
+            }
+        }
+    }
+
+
+    @media (max-width: v.$media_xl) {
+        .about {
+            &__img-preview {
+                width: 400px;
+            }
+        }
+    }
+
+    @media (max-width: v.$media_lg) {
+        .about {
+            &__content {
+                h1 {
+                    font-size: 24px;
+                }
+
+                 &-description {
+                    font-size: 18px;
+                }
+            }
+
+            &__img-preview {
+                width: 300px;
+            }
+        }
+    }
+
+    @media (max-width: v.$media_md) {
+        .about {
+            @include m.d-flex(start, center, wrap, row, 40px, 20px );
+            &__content {
+                h1 {
+                    font-size: 24px;
+                }
+
+                 &-description {
+                    font-size: 18px;
+                }
+            }
+
+            &__img-preview {
+                position: absolute;
+                top: 0;
+                margin-top: 20px;
+                width: 300px;
+            }
+        }
+    }
 }
