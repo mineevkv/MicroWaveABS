@@ -662,6 +662,13 @@ hr {
           column-gap: 20px;
   row-gap: 0;
 }
+@media (max-width: 1200px) {
+  .research-section .research__cards-wrapper {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
 
 .production-section {
   padding: 80px 0 0 0;
@@ -691,6 +698,13 @@ hr {
      -moz-column-gap: 0;
           column-gap: 0;
   row-gap: 0;
+}
+@media (max-width: 1400px) {
+  .production-section .production__cards-wrapper {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 .cooperation-section {
