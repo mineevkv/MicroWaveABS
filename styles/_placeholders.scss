@@ -4,6 +4,10 @@
 %h2-style {
     @include m.font(46px, 700, v.$color_blue);
     text-align: center;
+
+    @media (max-width: v.$media_lg) {
+        @include m.font(36px, 700, v.$color_blue);
+    }
 }
 
 %hover-black {
@@ -23,6 +27,12 @@
     background: v.$color-blue;
     border-radius: 45px;
     @include m.font(18px, 700, v.$color_white);
+
+    @media (max-width: v.$media_lg) {
+        width: 180px;
+        height: 50px;
+        @include m.font(16px, 700, v.$color_white);
+    }
     
     &:hover {
         cursor: pointer;
