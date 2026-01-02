@@ -3,53 +3,84 @@
 @use "placeholders";
 
 .cooperation-section {
-    padding: 0 0 0 0;
+  padding: 0 0 0 0;
 
-    .cooperation {
-        margin: 0 auto;
-        padding-top: 80px;
+  .cooperation {
+    margin: 0 auto;
+    padding-top: 80px;
 
-        background: url("../../assets/img/main/worldmap.webp") center/contain no-repeat;
+    background: url("../../assets/img/main/worldmap.webp") center/contain
+      no-repeat;
 
-        
-        &__title {
-            @extend %h2-style;
-            
-        }
-
-        &__description{
-            margin-top: 80px;
-            margin-bottom: 20px;
-            @include m.font(24px, 600, v.$color_gray);
-        }
-
-        &__service {
-            @include m.font(20px, 400, v.$color_black);
-            margin-bottom: 10px;
-
-            &-list {
-                margin-left: 50px;
-                margin-right: 50px;
-                margin-bottom: 30px;
-                @include m.d-flex(space-between, flex-start, wrap, row, 20px, 20px);
-
-                li::marker {
-                content: "✔ ";
-                color: v.$color_blue;
-                font-size: 1em;
-                }
-
-                .list__item {
-                    max-width: 45%;
-                }
-            }
-        }
-
-        &__button {
-            @extend %blue-btn;
-            margin: 0 auto;
-            display: block;
-        }
-        
+    &__title {
+      @extend %h2-style;
     }
+
+    &__description {
+      margin-top: 80px;
+      margin-bottom: 20px;
+      @include m.font(24px, 600, v.$color_gray);
+    }
+
+    &__service {
+      @include m.font(20px, 400, v.$color_black);
+      margin-bottom: 10px;
+
+      &-list {
+        margin-left: 50px;
+        margin-right: 50px;
+        margin-bottom: 30px;
+        @include m.d-flex(space-between, flex-start, wrap, row, 20px, 20px);
+
+        li::marker {
+          content: "✔ ";
+          color: v.$color_blue;
+          font-size: 1em;
+        }
+
+        .list__item {
+          max-width: 45%;
+        }
+      }
+    }
+
+    &__button {
+      @extend %blue-btn;
+      margin: 0 auto;
+      display: block;
+    }
+  }
+
+  @media (max-width: v.$media_xxl) {
+    .cooperation {
+      // margin: 0 auto;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  }
+
+  @media (max-width: v.$media_lg) {
+    .cooperation {
+      &__description {
+        font-size: 20px;
+      }
+      &__service {
+        font-size: 16px;
+      }
+    }
+  }
+
+  @media (max-width: v.$media_md) {
+    .cooperation {
+      &__service {
+        &-list {
+          .list__item {
+            max-width: 100%;
+          }
+        }
+      }
+    }
+  }
+
+
 }

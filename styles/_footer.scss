@@ -102,4 +102,16 @@
       }
     }
   }
+
+  @media (max-width: v.$media_sm) {
+    .footer {
+      &__up {
+        .nav__links-1,
+        .nav__links-2,
+        .nav__links-3 {
+          display: none;
+        }
+      }
+    }
+  }
 }

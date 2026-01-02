@@ -3,85 +3,89 @@
 @use "placeholders";
 
 .partners-section {
-    padding: 80px 0 0 0;
+  padding: 80px 0 0 0;
 
-    
+  .partners {
+    max-width: v.$media_xl;
+    margin: 0 auto;
+    margin-bottom: 80px;
 
-    .partners {
-        max-width: v.$media_xl;
-        margin: 0 auto;
-        margin-bottom: 80px;
+    // TODO: Using Pseudo-elements (::before or ::after)
 
-        // TODO: Using Pseudo-elements (::before or ::after)
-
-        &__title {
-            @extend %h2-style;
-            position: relative;
-            z-index: 2;
-        }
-
-        &__logos-wrapper {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            grid-template-rows: repeat(2, 1fr);
-            gap: 40px;
-            padding: 80px 0 0 0;
-            justify-items: center;
-            align-items: center;
-
-            a {
-                color: transparent;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                width: 100%;
-                height: 100%;
-            }
-            
-            img {
-                z-index: 1;
-                max-height: 100px;
-                width: auto;
-                background-color: none;
-                object-fit: contain;
-            }
-
-            .partners__logo {
-                // object-fit: contain;
-
-
-                &_unn {
-                    height: 70px;
-                }
-
-                &_niikam {
-                    height: 70px;
-                }
-
-                &_sao {
-                    height: 80px;
-                }
-            }
-        }
+    &__title {
+      @extend %h2-style;
+      position: relative;
+      z-index: 2;
     }
 
-    @media (max-width: v.$media_xl) {
-        .partners {
-            &__logos-wrapper {
-                grid-template-columns: repeat(2, 1fr);
-                grid-template-rows: repeat(3, 1fr);
-                }
-            }
+    &__logos-wrapper {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      gap: 40px;
+      padding: 80px 0 0 0;
+      justify-items: center;
+      align-items: center;
+
+      a {
+        color: transparent;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+      }
+
+      img {
+        z-index: 1;
+        max-height: 100px;
+        width: auto;
+        background-color: none;
+        object-fit: contain;
+      }
+
+      .partners__logo {
+        // object-fit: contain;
+
+        &_unn {
+          height: 70px;
         }
 
-    
-    @media (max-width: v.$media_md) {
-        .partners {
-            &__logos-wrapper {
-                grid-template-columns: repeat(1, 1fr);
-                grid-template-rows: repeat(6, 1fr);
-                }
-            }
+        &_niikam {
+          height: 70px;
         }
-    
+
+        &_sao {
+          height: 80px;
+        }
+      }
+    }
+  }
+
+  @media (max-width: v.$media_xl) {
+    .partners {
+      &__logos-wrapper {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+      }
+    }
+  }
+
+  @media (max-width: v.$media_md) {
+    .partners {
+      &__logos-wrapper {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+      }
+    }
+  }
+  @media (max-width: v.$media_min) {
+    .partners__logos-wrapper{
+        img {
+          width: 80vw;
+          max-height: 70px;
+        }
+
+    }
+  }
 }
